@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainview" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+	<children>
+		<BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<top>
+				<Pane prefHeight="98.0" prefWidth="500.0" styleClass="medio" stylesheets="@application.css" BorderPane.alignment="CENTER" />
+			</top>
+			<center>
+				<VBox alignment="CENTER" fillWidth="false" prefHeight="500.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+					<children>
+						<Label text="LOGIN">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Label>
+						<ImageView fx:id="imagen" fitHeight="250.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@profilephoto.png" />
+							</image>
+						</ImageView>
+						<JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="188.0" promptText="username">
+							<VBox.margin>
+								<Insets top="10.0" />
+							</VBox.margin>
+						</JFXTextField>
+						<JFXPasswordField labelFloat="true" prefHeight="25.0" prefWidth="192.0" promptText="password">
+							<VBox.margin>
+								<Insets top="15.0" />
+							</VBox.margin>
+						</JFXPasswordField>
+						<JFXButton fx:id="boton" onAction="#openStage" onMouseEntered="#hover" onMouseExited="#unHover" prefHeight="19.0" prefWidth="70.0" styleClass="boton" stylesheets="@application.css" text="Let Me In!" textFill="WHITE">
+							<VBox.margin>
+								<Insets top="12.0" />
+							</VBox.margin>
+						</JFXButton>
+                  <Label />
+					</children>
+					<BorderPane.margin>
+						<Insets left="200.0" right="200.0" />
+					</BorderPane.margin>
+				</VBox>
+			</center>
+			<bottom>
+				<AnchorPane prefHeight="36.0" prefWidth="652.0" BorderPane.alignment="CENTER">
+					<children>
+						<VBox prefHeight="28.0" prefWidth="652.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+							<children>
+								<Pane prefHeight="34.0" prefWidth="652.0" styleClass="buttom" stylesheets="@application.css">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></Pane>
+							</children>
+						</VBox>
+                  <AnchorPane layoutY="-9.0" prefHeight="43.0" prefWidth="152.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-9.0">
+                     <children>
+            										<Label layoutX="46.0" layoutY="26.0" prefHeight="17.0" prefWidth="92.0" text="Guest Access..." AnchorPane.rightAnchor="14.0">
+            											
+                                       <tooltip>
+                              <Tooltip text="Hey there!" />
+                           </tooltip>
+            										</Label>
+                     </children>
+                  </AnchorPane>
+					</children>
+				</AnchorPane>
+			</bottom>
+		</BorderPane>
+	</children>
+</AnchorPane>

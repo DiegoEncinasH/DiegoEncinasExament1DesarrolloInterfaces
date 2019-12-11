@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.medio{
+	-fx-background-image: url("sky.jpeg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+.buttom{
+	-fx-background-color: orange;
+}
+.boton{
+	-fx-background-color: orange;
+}
